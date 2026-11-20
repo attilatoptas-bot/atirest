@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Üst Menü */
+nav {
+  background-color: #2563eb;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Ana İçerik Kutusu (Mobil Uyumlu) */
+.kutu {
+  max-width: 700px;
+  width: 90%;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+/* Form Elemanları */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Telefonda tam genişlik */
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Üst menüdeki logo ayarı */
+.logo {
+  height: 35px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+/* Sayfa içindeki resim ayarı (Mobil uyumlu) */
+.sayfa-resmi {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0;
+  display: block;
+}
+
+/* Karanlık Mod Butonu */
+.tema-butonu {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto; /* Genel buton genişliğini ezer */
+  margin-left: 15px;
+}
+
+.tema-butonu:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Karanlık Mod Aktif Olduğunda Tüm Sayfalar İçin Geçerli Renkler */
+html.karanlik-mod body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+html.karanlik-mod nav {
+  background-color: #1e293b;
+}
+
+html.karanlik-mod .kutu {
+  background-color: #1e293b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+html.karanlik-mod h1 {
+  color: #60a5fa;
+}
+
+html.karanlik-mod a {
+  color: #93c5fd;
+}
+
+html.karanlik-mod input,
+html.karanlik-mod textarea,
+html.karanlik-mod pre {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border: 1px solid #334155;
+}

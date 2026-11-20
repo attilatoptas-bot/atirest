@@ -1,0 +1,30 @@
+<head>
+<meta charset="UTF-8"><title>İletişim</title>
+   <script>
+    if (localStorage.getItem('tema') === 'karanlik') {
+      document.documentElement.classList.add('karanlik-mod');
+    }
+  </script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Ana Sayfa</a> | 
+    <a href="/hakkimda">Hakkımda</a> | 
+    <a href="/iletisim">İletişim</a>
+<!-- Karanlık Mod Butonu -->
+    <button id="tema-degistir" class="tema-butonu">🌙 Karanlık Mod</button>
+
+  </nav>
+  <h1>İletişim</h1>
+  <p>Bana ornek@email.com adresinden ulaşabilirsiniz.</p>
+  <form action="/gonder" method="POST">
+    <p>Adınız: <br><input type="text" name="ad" required></p>
+    <p>Mesajınız: <br><textarea name="mesaj" required></textarea></p>
+    <button type="submit">Gönder</button>
+  </form>
+
+<script src="/tema.js"></script>
+
+</body>
+</html>

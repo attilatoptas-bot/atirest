@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"><title>Hakkımda</title>
+   <script>
+    if (localStorage.getItem('tema') === 'karanlik') {
+      document.documentElement.classList.add('karanlik-mod');
+    }
+  </script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Ana Sayfa</a> | 
+    <a href="/hakkimda">Hakkımda</a> | 
+    <a href="/iletisim">İletişim</a>
+<!-- Karanlık Mod Butonu -->
+    <button id="tema-degistir" class="tema-butonu">🌙 Karanlık Mod</button>
+  </nav>
+  <h1>Hakkımda</h1>
+  <p>Bu siteyi sıfırdan Node.js ve Not Defteri ile kodluyorum.</p>
+
+<script src="/tema.js"></script>
+
+</body>
+</html>
